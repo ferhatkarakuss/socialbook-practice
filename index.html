@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SocialBook Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="socialbook_img/images/logo.png" alt="" class="logo" />
+
+        <ul>
+          <li>
+            <img src="socialbook_img/images/notification.png" alt="" />
+            <img src="socialbook_img/images/inbox.png" alt="" />
+            <img src="socialbook_img/images/video.png" alt="" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="socialbook_img/images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="socialbook_img/images/profile-pic.png" alt="" />
+        </div>
+      </div>
+
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="socialbook_img/images/profile-pic.png" alt="" />
+            <div>
+              <p>John Nicholson</p>
+              <a href="#">See your Profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="socialbook_img/images/feedback.png" alt="" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us improve the new design.</a>
+            </div>
+          </div>
+          <hr />
+          <div class="setting-links">
+            <img
+              src="socialbook_img/images/setting.png"
+              class="settings-icon"
+            />
+            <a href="#"
+              >Settings <img src="socialbook_img/images/arrow.png" width="10px"
+            /></a>
+          </div>
+
+          <div class="setting-links">
+            <img src="socialbook_img/images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help <img src="socialbook_img/images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img
+              src="socialbook_img/images/display.png"
+              class="settings-icon"
+            />
+            <a href="#"
+              >Display <img src="socialbook_img/images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="socialbook_img/images/logout.png" class="settings-icon" />
+            <a href="#"
+              >Logout <img src="socialbook_img/images/arrow.png" width="10px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- LEFT-SİDEBAR--------------- -->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"
+            ><img src="socialbook_img/images/news.png" alt="" />Latest News</a
+          >
+          <a href="#"
+            ><img src="socialbook_img/images/friends.png" alt="" />Friends</a
+          >
+          <a href="#"
+            ><img src="socialbook_img/images/group.png" alt="" />Group</a
+          >
+          <a href="#"
+            ><img src="socialbook_img/images/watch.png" alt="" />Watch</a
+          >
+          <a href="#">See more</a>
+        </div>
+
+        <div class="shortcut-links">
+          <p>Your Shourtcuts</p>
+          <a href="#"
+            ><img src="socialbook_img/images/shortcut-1.png" />Web Developers</a
+          >
+          <a href="#"
+            ><img src="socialbook_img/images/shortcut-2.png" />Web Design</a
+          >
+          <a href="#"
+            ><img src="socialbook_img/images/shortcut-3.png" />Full Stack
+            Development</a
+          >
+          <a href="#"
+            ><img src="socialbook_img/images/shortcut-4.png" />Website
+            Experts</a
+          >
+        </div>
+      </div>
+      <!-- LEFT-SİDEBAR---------------- -->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="socialbook_img/images/upload.png" />
+            <p>Post Story</p>
+          </div>
+
+          <div class="story story2">
+            <img src="socialbook_img/images/member-1.png" />
+            <p>Alison</p>
+          </div>
+
+          <div class="story story3">
+            <img src="socialbook_img/images/member-2.png" />
+            <p>Jack</p>
+          </div>
+
+          <div class="story story4">
+            <img src="socialbook_img/images/member-3.png" />
+            <p>Samona</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="socialbook_img/images/profile-pic.png" alt="" />
+            <div>
+              <p>John Nicholson</p>
+              <small>Public <i class="fas fa-caret-down"></i></small>
+            </div>
+          </div>
+
+          <div class="post-input-container">
+            <textarea
+              placeholder="What's on your mind, John?"
+              rows="3"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#"
+                ><img src="socialbook_img/images/live-video.png" alt="" />Live
+                Video</a
+              >
+              <a href="#"
+                ><img
+                  src="socialbook_img/images/photo.png"
+                  alt=""
+                />Photo/Video</a
+              >
+              <a href="#"
+                ><img
+                  src="socialbook_img/images/feeling.png"
+                  alt=""
+                />Feeling/Activity</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="socialbook_img/images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021 , 13:40pm</span>
+              </div>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+            voluptas?
+          </p>
+          <img src="socialbook_img/images/feed-image-1.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div>
+                <img src="socialbook_img/images/like-blue.png" alt="" />11
+              </div>
+              <div>
+                <img src="socialbook_img/images/comments.png" alt="" />7
+              </div>
+              <div><img src="socialbook_img/images/share.png" alt="" />22</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="socialbook_img/images/profile-pic.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="socialbook_img/images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021 , 13:40pm</span>
+              </div>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+            voluptas?
+          </p>
+          <img src="socialbook_img/images/feed-image-2.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div>
+                <img src="socialbook_img/images/like-blue.png" alt="" />76
+              </div>
+              <div>
+                <img src="socialbook_img/images/comments.png" alt="" />33
+              </div>
+              <div><img src="socialbook_img/images/share.png" alt="" />22</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="socialbook_img/images/profile-pic.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="socialbook_img/images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021 , 13:40pm</span>
+              </div>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+            voluptas?
+          </p>
+          <img src="socialbook_img/images/feed-image-3.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div>
+                <img src="socialbook_img/images/like-blue.png" alt="" />76
+              </div>
+              <div>
+                <img src="socialbook_img/images/comments.png" alt="" />33
+              </div>
+              <div><img src="socialbook_img/images/share.png" alt="" />22</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="socialbook_img/images/profile-pic.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+
+      <!-- ------RİGHT SİDEBAR------ -->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="fas fa-map-marker-alt"> </i> Willson Tech Park</p>
+            <a href="#">More İnfo</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>22</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Mobile Marketing</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+            <a href="#">More İnfo</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img
+          src="socialbook_img/images/advertisement.png"
+          class="sidebar-ads"
+        />
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="socialbook_img/images/member-1.png" alt="" />
+          </div>
+          <p>Alison Mina</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="socialbook_img/images/member-2.png" alt="" />
+          </div>
+          <p>Jack Aston</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="socialbook_img/images/member-3.png" alt="" />
+          </div>
+          <p>Samone Rose</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">2023 Lorem ipsum dolor sit amet.</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
